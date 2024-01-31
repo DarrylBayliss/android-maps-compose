@@ -12,9 +12,14 @@ jacoco-tool-plugin = "0.8.7"
 junitktx = "1.1.3"
 junit = "4.13.2"
 kotlin = "1.7.20"
+lint-api = "31.1.0"
 material = "1.5.0"
 maps = "3.3.0"
 mapsecrets = "2.0.1"
+agp2 = "7.3.1"
+org-jetbrains-kotlin-android = "1.7.20"
+androidx-test-ext-junit = "1.1.5"
+appcompat = "1.6.1"
 
 [libraries]
 android-gradle-plugin = { module = "com.android.tools.build:gradle", version.ref = "agp" }
@@ -37,6 +42,8 @@ dokka-plugin = { module = "org.jetbrains.dokka:dokka-gradle-plugin", version.ref
 jacoco-android-plugin = { module = "com.hiya:jacoco-android", version.ref = "jacoco-plugin" }
 kotlin = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk7", version.ref = "kotlin" }
 kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+lint-api = { module = "com.android.tools.lint:lint-api", version.ref = "lint-api" }
+lint-test = { module = "com.android.tools.lint:lint-tests", version.ref = "lint-api" }
 maps-ktx-std = { module = "com.google.maps.android:maps-ktx", version.ref = "maps" }
 maps-ktx-utils = { module = "com.google.maps.android:maps-utils-ktx", version.ref = "maps" }
 maps-utils = { module = "com.google.maps.android:android-maps-utils", version.require = "2.3.0" }
@@ -44,6 +51,10 @@ maps-playservice = { module = "com.google.android.gms:play-services-maps", versi
 maps-secrets-plugin = { module = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin:secrets-gradle-plugin", version.ref = "mapsecrets" }
 material = { module = "com.google.android.material:material", version.ref = "material" }
 test-junit = { module = "junit:junit", version.ref = "junit" }
+junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 
 [plugins]
 dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
+com-android-library = { id = "com.android.library", version.ref = "agp2" }
+org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin-android" }
