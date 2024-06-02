@@ -22,7 +22,7 @@ public class GoogleMapsComposableUsedOutsideGoogleMapsContentLambdaDetector : Co
             explanation =
             """
             Using a Composable annotated with @GoogleMapsComposable outside of 
-            a GoogleMaps content lambda is not supported. Move the composable
+            a GoogleMaps content lambda causes crashes. Move the composable
             inside of the GoogleMaps content lambda.
             """,
             category = Category.CORRECTNESS,
@@ -36,9 +36,7 @@ public class GoogleMapsComposableUsedOutsideGoogleMapsContentLambdaDetector : Co
     }
 
     override fun visitComposable(context: JavaContext, function: KtFunction) {
-
-        function.parent.
-
+        function.parent
     }
 
     override fun visitAnnotationUsage(

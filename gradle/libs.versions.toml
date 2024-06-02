@@ -12,9 +12,7 @@ jacoco-tool-plugin = "0.8.7"
 junitktx = "1.1.5"
 junit = "4.13.2"
 kotlin = "1.9.23"
-kotlin = "1.9.22"
 lint-api = "31.1.0"
-material = "1.5.0"
 maps = "3.3.0"
 material = "1.11.0"
 mapsktx = "5.0.0"
@@ -45,17 +43,12 @@ dokka-plugin = { module = "org.jetbrains.dokka:dokka-gradle-plugin", version.ref
 jacoco-android-plugin = { module = "com.mxalbert.gradle:jacoco-android", version.ref = "jacoco-plugin", version.require = "0.2.1" }
 kotlin = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk7", version.ref = "kotlin" }
 kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
-<<<<<<< HEAD
 lint-api = { module = "com.android.tools.lint:lint-api", version.ref = "lint-api" }
 lint-test = { module = "com.android.tools.lint:lint-tests", version.ref = "lint-api" }
-maps-ktx-std = { module = "com.google.maps.android:maps-ktx", version.ref = "maps" }
-maps-ktx-utils = { module = "com.google.maps.android:maps-utils-ktx", version.ref = "maps" }
 maps-utils = { module = "com.google.maps.android:android-maps-utils", version.require = "2.3.0" }
 maps-playservice = { module = "com.google.android.gms:play-services-maps", version.require = "18.0.2" }
-=======
 maps-ktx-std = { module = "com.google.maps.android:maps-ktx", version.ref = "mapsktx" }
 maps-ktx-utils = { module = "com.google.maps.android:maps-utils-ktx", version.ref = "mapsktx" }
->>>>>>> origin/main
 maps-secrets-plugin = { module = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin:secrets-gradle-plugin", version.ref = "mapsecrets" }
 material = { module = "com.google.android.material:material", version.ref = "material" }
 test-junit = { module = "junit:junit", version.ref = "junit" }
@@ -63,10 +56,6 @@ junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-t
 appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 
 [plugins]
-<<<<<<< HEAD
 dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
 com-android-library = { id = "com.android.library", version.ref = "agp2" }
 org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin-android" }
-=======
-dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
->>>>>>> origin/main

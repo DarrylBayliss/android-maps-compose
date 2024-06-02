@@ -10,7 +10,7 @@ public class ComposeMapsLintRuleRegistry : IssueRegistry() {
     override val vendor: Vendor = Vendor(
         vendorName = "Google Maps Open Source",
         identifier = "com.google.maps.android.compose.lint",
-        feedbackUrl = "https://github.com/googlemaps/android-maps-compose/issues",
+        feedbackUrl = "https://github.com/googlemaps/android-maps-compose/issues"
     )
 
     override val api: Int = CURRENT_API
